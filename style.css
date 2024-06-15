@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    background-color: #212121;
+  }
+  
+  input,
+  button {
+    cursor: pointer
+  }
+  
+  .clearfix {
+    clear: both
+  }
+  
+  
+  /* Start Navbar*/
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  .navbar {
+    margin-top: 300px;
+    height: 60px;
+    background-color: #e15669;
+    z-index: 1;
+    width: 100%
+  }
+  
+  .navbar-header {
+    padding: 0 0;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    padding: 0 20px 0px 20px;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase
+  }
+  
+  .navbar-brand .word {
+    color: #e15669;
+    background-color: #fff;
+    padding: 10px 0;
+    font-size: 25px
+  }
+  
+  .toggle {
+    float: right;
+    width: 57px;
+    height: 40px;
+    padding-top: 2px;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right:40px;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .toggle:hover {
+    background: #e15669;
+  }
+  
+  .toggle:active {
+    background: #e15669;
+  }
+  
+  .toggle:focus {
+    outline: none;
+  }
+  
+  .toggle > span {
+    display: block;
+    border-radius: 2px;
+    height: 5px;
+    width: 34px;
+    background: #6e7074;
+    margin: auto;
+    margin-bottom: 3px;
+  }
+  
+  .navlist {
+    height: 0;
+    float: right;
+    overflow: hidden;
+    background: #6e7074;
+    padding: 0 5px;
+    width: 200px;
+    transition: height .5s;
+    padding-left: 0px;
+    border-radius: 0 0 10px;
+    position: relative;
+    z-index: 1;
+    top: auto;
+  }
+  
+  .nav > li:first-child {
+    padding-top: 5px;
+  }
+  
+  .nav > li {
+    list-style: none;
+    display: block;
+  }
+  
+  .nav > li > a {
+    padding: 10px 10px;
+    margin-left: 5px;
+    line-height: 30px;
+    background: #e15669;
+    text-align: right;
+    color: #fff;
+    display: block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transition: padding-right 0.3s;
+  }
+  
+  .nav > li > a:hover {
+    padding-right: 15px;
+    color: #fff;
+    background: #e15669;
+  }
+  
+  .nav > li:last-child > a {
+    border-radius: 0 0 10px 0;
+  }
+  
+  @media(min-width:768px) {
+    .navbar {
+      height: 60px;
+      background-color: #e15669;
+    }
+    .navbar-header {
+      float: left;
+    }
+    .toggle {
+      display: none;
+    }
+    .navlist {
+      display: block;
+      height: 0 !important;
+      padding-top: 10px !important;
+      background: transparent !important;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      top:0
+    }
+    .nav {
+      margin: 0;
+      padding: 0;
+    }
+    .nav > li {
+      float: left;
+      list-style: none;
+      padding: 5px;
+    }
+    .nav > li > a {
+      border-radius: 5px !important;
+      background: transparent;
+      padding: 0 15px;
+      border: none;
+    }
+    .nav > li > a:hover {
+      background: #fff;
+      color: #e15669;
+    }
+  }
+  
+  .show {
+    height: 220px;
+    float: right;
+  }
+  
+  
+  /* Start Navbar*/
+  
+  
+  /****************** Start Media Querry ******************/
+  
+  
+  /*  Mobile & Tablet */
+  
+  @media (max-width:767px) {
+    .navlist {
+      position: absolute;
+      bottom: 44px;
+      right: 0;
+      top: auto;
+    }
+    .navbar {
+      position: relative;
+    }
+  }
+  
+  
+  /* Small Screen */
+  
+  @media (min-width:768px) {
+    .container {
+      width: 780px;
+    }
+  }
+  
+  
+  /* Mudium Screen */
+  
+  @media (min-width:992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  
+  /* Large Screen */
+  
+  @media (min-width:1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  
+  /****************** End Media Querry ******************/
+  
+  
+  /************** Start FrameWork *****************/
+  
+  .container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px
+  }
+  
+  .elem-center {
+    text-align: center;
+  }
+  
+  .left {
+    float: left
+  }
+  
+  .right {
+    float: right
+  }
+  

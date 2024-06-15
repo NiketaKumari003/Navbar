@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="navbar elem-center">
+        <div class="container">
+           <div class="parent left-right">
+                <div class="navbar-header">
+                  <button class="toggle"><span></span>
+                  <span></span>
+                  <span></span></button>
+                  <a href="" class="navbar-brand"><span class="word">NAV</span>BAR</a>
+                </div>
+                  <ul class="nav navlist" id="links">
+                    <li class="active"><a href="#" data-value="about">Home</a></li>
+                    <li><a href="#" data-value="port">Portfiolio</a></li>
+                    <li><a href="#" data-value="foll">Follow</a></li>
+                    <li><a href="#" data-value="cont">Contact</a></li>
+                  </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+ <script>
+    /*global $, alert, console*/
+
+$(".toggle").click(function () {
+    
+    'use strict';
+    
+    $(".navlist").toggleClass("show");
+
+});
+ </script>
+</body>
+
+</html>
